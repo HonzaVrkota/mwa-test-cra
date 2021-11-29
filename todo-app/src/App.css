@@ -1,0 +1,117 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(174, 225, 238);
+  background: radial-gradient(
+    circle,
+    rgba(174, 225, 238, 1) 0%,
+    rgba(209, 148, 233, 1) 100%
+  );
+}
+
+.todo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-wrapper {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #ffffff;
+  width: 500px;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.todo-item {
+  background-color: #ff7878;
+  color: #000000;
+  font-size: 1.3rem;
+  text-align: center;
+  border-radius: 15px;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
