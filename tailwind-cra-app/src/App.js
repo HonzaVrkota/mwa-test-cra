@@ -112,14 +112,25 @@ function App() {
       </button>
       {isToggle && <Card completed={"FEWFew"} content={"GEW"} />}
       <DefaulBtn text={`Počet: ${count}`} className="px-16" />
+      <Card completed={"FEWFew"} content={"GEW"} />
 
-      {loading ? (
+      {/* {loading ? (
         <p>Loading...</p>
       ) : (
         data.map((item, i) => (
           <Card key={i} completed={item.completed} content={item.title} />
         ))
-      )}
+      )} */}
+
+      {data.map((item, i) => {
+        return (
+          <div>
+            <p>
+              {i + 1}. {item.title}
+            </p>
+          </div>
+        );
+      })}
     </div>
   );
 }

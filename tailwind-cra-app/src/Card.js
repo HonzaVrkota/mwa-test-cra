@@ -1,9 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Card = ({ completed, content }) => {
-  useEffect(() => {
-    console.log("Start CARD.JS");
-  }, []);
   return (
     <div className="w-2/3 bg-white h-auto tracking-wide mb-14 border border-black-800 mx-1 rounded-lg relative">
       <div className="small-banner w-1 h-20 bg-blue-600 absolute rounded-tl-md"></div>
