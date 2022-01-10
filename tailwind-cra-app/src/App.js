@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { myPromise } from "./promise";
 import DefaulBtn from "./Button";
-import Card from "./Card";
+import Card, { CardTitle, CardText } from "./Card";
+import { Card as Card2 } from "./Card2";
+import { toUpper } from "lodash";
 import "./index.css";
 
 function App() {
@@ -29,6 +31,9 @@ function App() {
     console.log("Před zavoláním fetchData");
     fetchData();
     console.log("Po zavolání fetchData");
+
+    const text = "ahoj jaké byly vánoce";
+    console.log(toUpper(text));
   }, []);
 
   // useEffect(() => {
@@ -92,6 +97,7 @@ function App() {
     <div className="bg-yellow-600 p-4">
       <h1 className="app-headline">hello tailwind</h1>
       <div className="bg-green-400 flex justify-center p-4">
+        <Card2 />
         <div className="flex flex-col gap-4 justify-center items-start text-center">
           <h1>{`Počet: ${count}`}</h1>
           <button
